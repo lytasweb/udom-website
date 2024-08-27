@@ -1,0 +1,505 @@
+:root {
+    --primary-color: rgb(243, 237, 237);
+    --secondary-color: rgb(150, 150, 255);
+    --truck-color: rgb(177, 176, 176);
+    --black: #232629;
+    --box-bg: #f9f9f9;
+    --link-icon:rgb(58, 58, 247);
+    --link-color:rgb(45, 45, 45);
+    --link-hover-color: rgb(58, 58, 247);
+    --box-shadow-color:.5px 0.5px 5px 5px rgb(202, 202, 202);
+}
+
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    background: var(--primary-color);
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+    height: 400px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--truck-color);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+}
+
+section {
+    position: relative;
+    height: 25vh;
+    z-index: 0;
+    background: white;
+}
+
+header {
+    margin: 0 auto;
+    max-width: 1500px;
+    opacity: 1;
+    padding-top: 8px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+nav .logo-left {
+    padding: 0 0 0 50px;
+}
+
+nav .logo-left img{
+    width: 150px;
+    height: 150px;
+}
+
+nav .logo-right {
+    padding: 0 50px 0 0;
+}
+
+nav .logo-right img {
+    border-radius: 50%;
+    border: 1px solid rgb(52, 74, 47);
+    padding: 4px;
+    width: 150px;
+    height: 150px;
+}
+
+nav .header {
+    background: white;
+    align-items: center;
+    margin-right: 100px;
+
+}
+
+
+nav .header h1 {
+    font-size: 5em;
+    color: rgb(25, 25, 253);
+
+}
+
+
+.navbar {
+    background-color: rgb(252, 248, 248);
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li {
+    font-size: 2.1rem;
+    padding: 20px;
+}
+
+div ul li a {
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+div ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+/* for the body content */
+
+section.body {
+    margin: 0 auto;
+    max-width: 1500px;
+    opacity: 1;
+    height: 140vh;
+}
+
+section.body .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* box one */
+
+.boxes .section_A {
+    padding: 0px 14px 14px 0px;
+    width: 25%;
+    margin: 0;
+    position: sticky;
+
+}
+
+.boxes .section_A .upper_part {
+    background: var(--box-bg);
+    margin: 5px 5px 14px 5px;
+    box-shadow: var(--box-shadow-color);
+}
+
+.boxes .section_A .upper_part h1 {
+    color: white;
+    font-weight: 600;
+    background-color: #5c6064;
+    padding: 10px 10px 10px 24px;
+    font-size: 2.1rem;
+}
+
+.boxes .section_A .upper_part ol {
+    padding: 60px 30px;
+}
+
+.boxes .section_A .upper_part ol li {
+    padding: 10px 5px;
+}
+
+.boxes .section_A .upper_part ol li ion-icon {
+    font-size: 30px;
+    color: var(--link-icon);
+}
+
+.boxes .section_A .upper_part ol li a {
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+.boxes .section_A .upper_part ol li a:hover {
+    color:  var(--link-hover-color);
+}
+
+.boxes .section_A .lower_part {
+    background: var(--box-bg);
+    margin: 10px 5px 14px 5px;
+    box-shadow: var(--box-shadow-color);
+}
+
+.boxes .section_A .lower_part h1 {
+    color: white;
+    background-color: #5c6064;
+    padding: 10px 12px 12px 24px;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.boxes .section_A .lower_part ol {
+    padding: 40px 30px;
+}
+
+.boxes .section_A .lower_part ol li {
+    padding: 10px 5px;
+}
+
+.boxes .section_A .lower_part ol li ion-icon {
+    font-size: 30px;
+    color: var(--link-icon);
+}
+
+.boxes .section_A .lower_part ol li a {
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+.boxes .section_A .lower_part ol li a:hover {
+    color: var(--link-hover-color);
+}
+
+
+/* box two */
+
+.boxes .section_B {
+    width: 50%;
+    margin: 5px;
+    position: sticky;
+
+}
+
+.boxes .section_B .upper_part {
+    margin: 5px 5px 14px 5px;
+    padding: 5px;
+    background: rgb(235, 228, 228);
+    border-radius: 5px;
+}
+
+.boxes .section_B .upper_part img {
+    width: 100%;
+    height: 100%;
+}
+
+.boxes .section_B .lower_part {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes .section_B .lower_part div {
+    width: 49%;
+    background: rgb(250, 247, 247);
+    padding: 10px;
+
+}
+
+.boxes .section_B .lower_part div img {
+    width: 100%;
+    height: 200px;
+}
+
+.boxes .section_B .lower_part div h1 {
+    color: var(--link-hover-color);
+    font-weight: 600;
+}
+
+
+
+
+/* box three */
+
+.boxes .section_C {
+    padding: 0px 0px 14px 14px;
+    width: 25%;
+    position: sticky;
+
+}
+
+.boxes .section_C .upper_part {
+    background: var(--box-bg);
+    box-shadow: var(--box-shadow-color);
+    margin: 5px 5px 14px 14px;
+}
+
+.boxes .section_C .upper_part h1 {
+    color: white;
+    background-color: #5c6064;
+    padding: 10px 12px 12px 24px;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.boxes .section_C .upper_part ol {
+    padding: 40px 30px;
+}
+
+.boxes .section_C .upper_part ol li {
+    padding: 10px 5px;
+}
+
+.boxes .section_C .upper_partol li ion-icon  {
+    font-size: 30px;
+    color: rgb(127, 88, 15);
+}
+
+.boxes .section_C .upper_part ol li a {
+    color: rgb(56, 56, 222);
+}
+
+.boxes .section_C .upper_part ol li a:hover {
+    font-weight: 600;
+}
+
+.boxes .section_C .lower_part {
+    background: var(--box-bg);
+    box-shadow: var(--box-shadow-color);
+    margin: 5px 5px 5px 14px;
+}
+
+.boxes .section_C .lower_part h1 {
+    color: white;
+    background-color: #5c6064;
+    padding: 10px 10px 10px 24px;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.boxes .section_C .lower_part ol {
+    padding: 60px 30px;
+}
+
+.boxes .section_C .lower_part ol li {
+    padding: 10px 5px;
+}
+
+.boxes .section_C .lower_part ol li i {
+    font-size: 30px;
+}
+
+.boxes .section_C .lower_part ol li i.fa-facebook{
+    color:blue;
+}
+
+.boxes .section_C .lower_partol li i.fa-instagram{
+    color: rgb(185, 15, 131);
+}
+
+.boxes .section_C .lower_part ol li i.fa-square-x-twitter{
+    color: rgb(38, 35, 35);
+}
+
+.boxes .section_C .lower_part ol li i.fa-linkedin{
+    color: rgb(48, 48, 193);
+}
+
+.boxes .section_C .lower_part ol li i.fa-youtube{
+    color: rgb(225, 32, 32);
+}
+
+.boxes .section_C .lower_part ol li a {
+    color: rgb(58, 58, 247);
+}
+
+.boxes .section_C .lower_part ol li a:hover {
+    opacity: 0.8;
+    color: rgb(42, 42, 171);
+}
+
+
+ol li {
+    padding: 5px;
+}
+
+ol li a {
+    color: black;
+    font-size: 1.8rem;
+}
+
+.body .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body .more p {
+    font-size: 1.8rem;
+    background: #156ECE;
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-weight: 600px;
+    margin-top: 10px;
+}
+
+.body .more p:hover {
+    opacity: 0.8;
+   
+}
+
+.body .more p a {
+    color: white;
+}
+
+
+
+/* for the footer  */
+
+
+
+footer {
+    background: #3d3c3c;
+    height: 170px;
+}
+
+footer .footer {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1500px;
+    opacity: 1;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(244, 244, 244);
+}
+
+footer .footer p {
+    color: white;
+    padding: 40px;
+    font-size: 1.8rem;
+}
+
+
+
+/* Styling the area of the slides */
+
+#slideshow {
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+ 
+.slide h1 {
+    color: white;
+    display: flex;
+    padding: 320px 50px;
+    text-shadow:#5c6064;
+    font-size: 1.8rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+.slide-wrapper {
+    width: calc(728px * 4);
+    animation: slide 25s ease infinite;
+}
+ 
+
+.slide:nth-child(1) {
+   background-image: url(images/image1.jpg);
+   background-size: cover;
+}
+ 
+.slide:nth-child(2) {
+    background-image: url(images/tehama.jpg);
+    background-size: cover;
+}
+ 
+.slide:nth-child(3) {
+    background-image: url(images/mahitaji-maarum.jpg);
+    background-size: cover;
+}
+ 
+.slide:nth-child(4) {
+    background-image: url(images/ega.jpg);
+    background-size: cover;
+}
+ 
+
+@keyframes slide {
+ 
+    20% {
+        margin-left: 0px;
+    }
+ 
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+ 
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+ 
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+}
